@@ -4,7 +4,7 @@ namespace App\Entity;
 
 use App\Repository\ClubRepository;
 
-//use ApiPlatform\Metadata\Get;
+
 use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiResource;
 
