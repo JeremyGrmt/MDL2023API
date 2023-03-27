@@ -17,6 +17,13 @@ use Symfony\Component\Serializer\Annotation\Groups;
     itemOperations: ['get' => ['normalization_context' => ['groups' => 'qualite:item']]],
     paginationEnabled: false,
 )]
+
+#[ApiFilter(
+        SearchFilter::class,
+        properties: [
+            'libellequalite' => 'exact'
+        ]
+)]
 #[ORM\Table(name: "QUALITE")]
 #[ORM\Entity(repositoryClass: QualiteRepository::class)]
 class Qualite
