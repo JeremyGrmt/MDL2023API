@@ -18,7 +18,12 @@ use Symfony\Component\Serializer\Annotation\Groups;
     paginationEnabled: false,
 )]
 
-#[ApiFilter(SearchFilter::class, properties: ['VILLE' => 'exact'])]
+#[ApiFilter(
+        SearchFilter::class, 
+        properties: [
+            'ville' => 'exact'
+            ]
+    )]
 #[ORM\Table(name: "CLUB")]
 #[ORM\Entity(repositoryClass: ClubRepository::class)]
 class Club
