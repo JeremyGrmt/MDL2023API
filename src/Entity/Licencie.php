@@ -21,7 +21,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 #[ApiFilter(
     SearchFilter::class,
     properties: [
-        'numlicense' => 'exact',
+        'numlicence' => 'exact',
         'nom' => 'exact',
         'prenom' => 'exact',
         'adresse1' => 'exact',
